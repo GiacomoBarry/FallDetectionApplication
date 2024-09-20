@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3902AAF22BDAAF54009928CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3902AAF12BDAAF54009928CE /* ContentView.swift */; };
+		391150542BDBBF4A0079EA0E /* Fall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391150532BDBBF4A0079EA0E /* Fall.swift */; };
+		391474D02BE3E49900C5083E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391474CF2BE3E49900C5083E /* SettingsView.swift */; };
+		391474D22BE54A8C00C5083E /* AppImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 391474D12BE54A8B00C5083E /* AppImage.png */; };
+		391474D42BE6CCC700C5083E /* FallDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391474D32BE6CCC700C5083E /* FallDetectionViewModel.swift */; };
+		391474D62BE6D9EF00C5083E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391474D52BE6D9EF00C5083E /* LocationManager.swift */; };
+		3916DADD2BE7D719002CE99D /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3916DADC2BE7D719002CE99D /* FirebaseFunctions */; };
+		3927F4162BE0065A00A3BE60 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 3927F4152BE0065A00A3BE60 /* Charts */; };
+		3927F4192BE2730100A3BE60 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3927F4182BE2730100A3BE60 /* FirebaseAuth */; };
+		3927F41B2BE2730100A3BE60 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3927F41A2BE2730100A3BE60 /* FirebaseFirestore */; };
+		3927F41D2BE273CF00A3BE60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3927F41C2BE273CF00A3BE60 /* GoogleService-Info.plist */; };
+		3927F41F2BE27A0100A3BE60 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927F41E2BE27A0100A3BE60 /* SignUp.swift */; };
+		3927F4242BE2C7D000A3BE60 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3927F4232BE2C7D000A3BE60 /* FirebaseMessaging */; };
+		396F6FF82BDA8C0100189F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396F6FF72BDA8C0100189F0E /* Assets.xcassets */; };
+		396F6FFB2BDA8C0100189F0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396F6FFA2BDA8C0100189F0E /* Preview Assets.xcassets */; };
+		396F70002BDA8C0100189F0E /* Fall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 396F6FFE2BDA8C0100189F0E /* Fall.xcdatamodeld */; };
+		39C077B12BDB11030076C148 /* fall_detection_model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 39C077B02BDB11030076C148 /* fall_detection_model.tflite */; };
+		39C077B32BDB9B070076C148 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C077B22BDB9B070076C148 /* Persistance.swift */; };
+		CFCE645A9A5991C2CE7B6FBA /* Pods_Fall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111D4A04FC624A3429E09217 /* Pods_Fall.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3927F42F2BE2E2C300A3BE60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		111D4A04FC624A3429E09217 /* Pods_Fall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA0FC669898A86BB98519F5 /* Pods_Fall_FallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fall_FallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA4F87E5DA69A6775DB9E03 /* Pods-Fall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fall.release.xcconfig"; path = "Target Support Files/Pods-Fall/Pods-Fall.release.xcconfig"; sourceTree = "<group>"; };
+		3902AAF12BDAAF54009928CE /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = SOURCE_ROOT; };
+		391150532BDBBF4A0079EA0E /* Fall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fall.swift; sourceTree = "<group>"; };
+		391474CF2BE3E49900C5083E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		391474D12BE54A8B00C5083E /* AppImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppImage.png; path = Fall/Assets.xcassets/AppIcon.appiconset/AppImage.png; sourceTree = "<group>"; };
+		391474D32BE6CCC700C5083E /* FallDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallDetectionViewModel.swift; sourceTree = "<group>"; };
+		391474D52BE6D9EF00C5083E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3927F41C2BE273CF00A3BE60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Fall/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3927F41E2BE27A0100A3BE60 /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		3948D704B94E5FA54702727D /* Pods-Fall-FallUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fall-FallUITests.release.xcconfig"; path = "Target Support Files/Pods-Fall-FallUITests/Pods-Fall-FallUITests.release.xcconfig"; sourceTree = "<group>"; };
+		396F6FF02BDA8BFE00189F0E /* Fall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		396F6FF72BDA8C0100189F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		396F6FFA2BDA8C0100189F0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		396F6FFF2BDA8C0100189F0E /* Fall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fall.xcdatamodel; sourceTree = "<group>"; };
+		39C077B02BDB11030076C148 /* fall_detection_model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = fall_detection_model.tflite; sourceTree = "<group>"; };
+		39C077B22BDB9B070076C148 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		451395D3021E4FE67DE36EB9 /* Pods-FallTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FallTests.release.xcconfig"; path = "Target Support Files/Pods-FallTests/Pods-FallTests.release.xcconfig"; sourceTree = "<group>"; };
+		520DA26D583F89A7951C62E2 /* Pods-Fall-FallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fall-FallUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fall-FallUITests/Pods-Fall-FallUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE08BF5CA1DF8283FEB7A62C /* Pods-Fall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fall.debug.xcconfig"; path = "Target Support Files/Pods-Fall/Pods-Fall.debug.xcconfig"; sourceTree = "<group>"; };
+		CCDEFF3FF6832606ECD418EE /* Pods-FallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FallTests.debug.xcconfig"; path = "Target Support Files/Pods-FallTests/Pods-FallTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F858F4EE4DD951EC22D953BE /* Pods_FallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		396F6FED2BDA8BFE00189F0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3927F4242BE2C7D000A3BE60 /* FirebaseMessaging in Frameworks */,
+				CFCE645A9A5991C2CE7B6FBA /* Pods_Fall.framework in Frameworks */,
+				3927F41B2BE2730100A3BE60 /* FirebaseFirestore in Frameworks */,
+				3916DADD2BE7D719002CE99D /* FirebaseFunctions in Frameworks */,
+				3927F4192BE2730100A3BE60 /* FirebaseAuth in Frameworks */,
+				3927F4162BE0065A00A3BE60 /* Charts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		396F6FE72BDA8BFE00189F0E = {
+			isa = PBXGroup;
+			children = (
+				391474D12BE54A8B00C5083E /* AppImage.png */,
+				3927F41C2BE273CF00A3BE60 /* GoogleService-Info.plist */,
+				39C077B02BDB11030076C148 /* fall_detection_model.tflite */,
+				396F6FF22BDA8BFE00189F0E /* Fall */,
+				396F6FF12BDA8BFE00189F0E /* Products */,
+				74626094C38C8FD3C3F61ACE /* Pods */,
+				3DEC4B65D70B753E4B7DEF22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		396F6FF12BDA8BFE00189F0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				396F6FF02BDA8BFE00189F0E /* Fall.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		396F6FF22BDA8BFE00189F0E /* Fall */ = {
+			isa = PBXGroup;
+			children = (
+				391150532BDBBF4A0079EA0E /* Fall.swift */,
+				3902AAF12BDAAF54009928CE /* ContentView.swift */,
+				3927F41E2BE27A0100A3BE60 /* SignUp.swift */,
+				391474CF2BE3E49900C5083E /* SettingsView.swift */,
+				396F6FF72BDA8C0100189F0E /* Assets.xcassets */,
+				39C077B22BDB9B070076C148 /* Persistance.swift */,
+				396F6FFE2BDA8C0100189F0E /* Fall.xcdatamodeld */,
+				391474D32BE6CCC700C5083E /* FallDetectionViewModel.swift */,
+				396F6FF92BDA8C0100189F0E /* Preview Content */,
+				391474D52BE6D9EF00C5083E /* LocationManager.swift */,
+			);
+			path = Fall;
+			sourceTree = "<group>";
+		};
+		396F6FF92BDA8C0100189F0E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				396F6FFA2BDA8C0100189F0E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DEC4B65D70B753E4B7DEF22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111D4A04FC624A3429E09217 /* Pods_Fall.framework */,
+				2CA0FC669898A86BB98519F5 /* Pods_Fall_FallUITests.framework */,
+				F858F4EE4DD951EC22D953BE /* Pods_FallTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74626094C38C8FD3C3F61ACE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE08BF5CA1DF8283FEB7A62C /* Pods-Fall.debug.xcconfig */,
+				2EA4F87E5DA69A6775DB9E03 /* Pods-Fall.release.xcconfig */,
+				520DA26D583F89A7951C62E2 /* Pods-Fall-FallUITests.debug.xcconfig */,
+				3948D704B94E5FA54702727D /* Pods-Fall-FallUITests.release.xcconfig */,
+				CCDEFF3FF6832606ECD418EE /* Pods-FallTests.debug.xcconfig */,
+				451395D3021E4FE67DE36EB9 /* Pods-FallTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		396F6FEF2BDA8BFE00189F0E /* Fall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 396F70192BDA8C0100189F0E /* Build configuration list for PBXNativeTarget "Fall" */;
+			buildPhases = (
+				A5D4DA240DF9816410EA54F1 /* [CP] Check Pods Manifest.lock */,
+				396F6FEC2BDA8BFE00189F0E /* Sources */,
+				396F6FED2BDA8BFE00189F0E /* Frameworks */,
+				396F6FEE2BDA8BFE00189F0E /* Resources */,
+				3927F42F2BE2E2C300A3BE60 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fall;
+			packageProductDependencies = (
+				3927F4152BE0065A00A3BE60 /* Charts */,
+				3927F4182BE2730100A3BE60 /* FirebaseAuth */,
+				3927F41A2BE2730100A3BE60 /* FirebaseFirestore */,
+				3927F4232BE2C7D000A3BE60 /* FirebaseMessaging */,
+				3916DADC2BE7D719002CE99D /* FirebaseFunctions */,
+			);
+			productName = Fall;
+			productReference = 396F6FF02BDA8BFE00189F0E /* Fall.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		396F6FE82BDA8BFE00189F0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					396F6FEF2BDA8BFE00189F0E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 396F6FEB2BDA8BFE00189F0E /* Build configuration list for PBXProject "Fall" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 396F6FE72BDA8BFE00189F0E;
+			packageReferences = (
+				3927F4142BE0065A00A3BE60 /* XCRemoteSwiftPackageReference "swiftui-charts" */,
+				3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3927F4202BE2C66D00A3BE60 /* XCRemoteSwiftPackageReference "twilio-verify-ios" */,
+				3927F4272BE2CA0C00A3BE60 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 396F6FF12BDA8BFE00189F0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				396F6FEF2BDA8BFE00189F0E /* Fall */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		396F6FEE2BDA8BFE00189F0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396F6FFB2BDA8C0100189F0E /* Preview Assets.xcassets in Resources */,
+				3927F41D2BE273CF00A3BE60 /* GoogleService-Info.plist in Resources */,
+				39C077B12BDB11030076C148 /* fall_detection_model.tflite in Resources */,
+				391474D22BE54A8C00C5083E /* AppImage.png in Resources */,
+				396F6FF82BDA8C0100189F0E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5D4DA240DF9816410EA54F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		396F6FEC2BDA8BFE00189F0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391150542BDBBF4A0079EA0E /* Fall.swift in Sources */,
+				391474D42BE6CCC700C5083E /* FallDetectionViewModel.swift in Sources */,
+				396F70002BDA8C0100189F0E /* Fall.xcdatamodeld in Sources */,
+				39C077B32BDB9B070076C148 /* Persistance.swift in Sources */,
+				391474D62BE6D9EF00C5083E /* LocationManager.swift in Sources */,
+				391474D02BE3E49900C5083E /* SettingsView.swift in Sources */,
+				3902AAF22BDAAF54009928CE /* ContentView.swift in Sources */,
+				3927F41F2BE27A0100A3BE60 /* SignUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		396F70172BDA8C0100189F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app uses location data to detect and respond to falls";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		396F70182BDA8C0100189F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app uses location data to detect and respond to falls";
+				INFOPLIST_KEY_NSMotionUsageDescription = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		396F701A2BDA8C0100189F0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE08BF5CA1DF8283FEB7A62C /* Pods-Fall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fall/Preview Content\"";
+				DEVELOPMENT_TEAM = Q57P829H7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location data at all times to continuously monitor for falls, even when the app is not in use.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This App uses location data to detect and respond to falls";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location to detect falls when the app is in use.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses accelerometer data to detect falls";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = App.Fall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		396F701B2BDA8C0100189F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EA4F87E5DA69A6775DB9E03 /* Pods-Fall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Fall/Preview Content\"";
+				DEVELOPMENT_TEAM = Q57P829H7L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs your location data at all times to continuously monitor for falls, even when the app is not in use.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This App uses location data to detect and respond to falls";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location to detect falls when the app is in use.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses accelerometer data to detect falls";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = App.Fall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		396F6FEB2BDA8BFE00189F0E /* Build configuration list for PBXProject "Fall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396F70172BDA8C0100189F0E /* Debug */,
+				396F70182BDA8C0100189F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		396F70192BDA8C0100189F0E /* Build configuration list for PBXNativeTarget "Fall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				396F701A2BDA8C0100189F0E /* Debug */,
+				396F701B2BDA8C0100189F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3927F4142BE0065A00A3BE60 /* XCRemoteSwiftPackageReference "swiftui-charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spacenation/swiftui-charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+		3927F4202BE2C66D00A3BE60 /* XCRemoteSwiftPackageReference "twilio-verify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twilio/twilio-verify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.2;
+			};
+		};
+		3927F4272BE2CA0C00A3BE60 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3916DADC2BE7D719002CE99D /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3927F4152BE0065A00A3BE60 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3927F4142BE0065A00A3BE60 /* XCRemoteSwiftPackageReference "swiftui-charts" */;
+			productName = Charts;
+		};
+		3927F4182BE2730100A3BE60 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3927F41A2BE2730100A3BE60 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3927F4232BE2C7D000A3BE60 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3927F4172BE2730100A3BE60 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		396F6FFE2BDA8C0100189F0E /* Fall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				396F6FFF2BDA8C0100189F0E /* Fall.xcdatamodel */,
+			);
+			currentVersion = 396F6FFF2BDA8C0100189F0E /* Fall.xcdatamodel */;
+			path = Fall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 396F6FE82BDA8BFE00189F0E /* Project object */;
+}
